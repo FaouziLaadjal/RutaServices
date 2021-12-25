@@ -202,7 +202,7 @@ font-weight: 700;}
   margin-bottom: 100px;
   display: grid;
 grid-template-columns: auto auto;
-gap: 10px;}
+gap: 50px;}
 .donwload-column2{display: grid;
   grid-template-rows: auto auto auto;
   justify-content: center;
