@@ -157,8 +157,9 @@ padding-left: 100px;
   justify-content: center;
   align-content: center;
 padding-right: 100px;
-   padding-top: 100px;
 }
+.dr2-img{
+   height:300px;}
 .drow2{
   margin-bottom: 100px;
   display: grid;
