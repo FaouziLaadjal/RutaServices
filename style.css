@@ -240,7 +240,7 @@ gap: 50px;}
   display: grid;
   grid-template-columns: auto auto ;
   background-color:#e8c358;
-  height: 50px;
+  
 }
 .lastbox-column1{
   padding-left: 100px;
@@ -294,5 +294,19 @@ margin-top: 30px;}
   display: inline;
 
 }
+@media (max-width:860px )
+{
+  .row1,.frow1,.drow1,.drow2,.download-row,.contact-row1{
+    display: block;
+  }
+  .column1,.column2,.dcolumn1,.dcolumn2,.download-column1,.donwload-column2,.contact-column1,.contact-column2{
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+  }
+  .ptext2{
+    font-size: 1rem;
+  }
+  }
 
 
