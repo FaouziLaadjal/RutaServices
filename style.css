@@ -6,7 +6,6 @@ html{scroll-behavior: smooth;}
     font-family: "Ubuntu", sans-serif;
     line-height: 1.5;
   color: #303030;}
-div{border: red 1px solid;}
 .firstbox{
   background-color:#f8e098;
   ;
@@ -43,7 +42,6 @@ text-align: center;
 }
 .column1
 {
-  
   padding-left: 100px;
   display: grid;
 grid-template-rows: auto auto auto;
@@ -53,6 +51,8 @@ gap: 20px;
 
 }
 .column2{
+  justify-content: center;
+  align-content: center;
   padding-right:100px;
 }
 h1 {
@@ -154,6 +154,8 @@ gap: 20px;
 padding-left: 100px;
 }
 .dcolumn2{
+  justify-content: center;
+  align-content: center;
 padding-right: 100px;
 }
 .drow2{
@@ -210,6 +212,8 @@ gap: 10px;}
 
 }
 .download-column1{
+  justify-content: center;
+  align-content: center;
   padding-left: 100px;
 }
 .contact-row1{
