@@ -1,16 +1,18 @@
 html{scroll-behavior: smooth;}
-*{  margin: 0;
+*{ 
+   margin: 0;
   width: 100%;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
     line-height: 1.5;
   color: #303030;}
-
+div{border: red 1px solid;}
 .firstbox{
   background-color:#f8e098;
   ;
   display: grid;
   grid-template-columns: auto auto;
+  margin-bottom: 100px;
 }
 .logo{
   width: 100px;
@@ -19,12 +21,12 @@ html{scroll-behavior: smooth;}
   padding: 20px 100px;
 }
 .navbar{
-  padding-right: 100px;
+  padding-right: 300px;
   align-self: center;
 text-align: right;
 }
 .navlinks li{ 
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 400;
   display: inline;
   padding: 10px;}
@@ -34,11 +36,15 @@ text-align: right;
   text-decoration: none;
 }
 .row1{
+  margin-bottom: 100px;
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
-.column1{display: grid;
+.column1
+{
+  padding-left: 100px;
+  display: grid;
 grid-template-rows: auto auto auto;
 justify-content: center;
 align-content:center;
@@ -108,6 +114,10 @@ h1 {
   background-image: linear-gradient(to bottom, #606060, #606060);
   text-decoration: none;
 }
+.text{
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .ptext2{
   
 text-align: center;
@@ -130,7 +140,7 @@ gap: 20px;}
 .drow1{
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 .dcolumn1{
   display: grid;
@@ -182,7 +192,7 @@ font-weight: 700;}
   text-decoration: none;
 }
 .download-row{display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: auto auto;
 gap: 10px;}
 .donwload-column2{display: grid;
   grid-template-rows: auto auto auto;
@@ -198,7 +208,7 @@ gap: 10px;}
 .contact-row1{
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 .contact-column1{
   display: grid;
@@ -215,7 +225,7 @@ gap: 10px;}
 .lastbox{
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: auto auto ;
   background-color:#e8c358;
   height: 50px;
 }
