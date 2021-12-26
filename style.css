@@ -306,14 +306,14 @@ textarea {
   font-size: 1.4rem;
   width: 230px;
   height: 50px;
-  display: inline;
 }
 @media screen and (max-width: 860px) {
   .navbar {
     padding: 0;
-    text-align: left;
   }
   .navlinks li a {
+    text-align: left;
+    display: inline;
     font-size: 0.9rem;
   }
   .row1,
@@ -354,5 +354,14 @@ textarea {
   .lastbox-column2 {
     padding: 10px;
   }
+  .btns {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
+div {
+  border: blue 1px solid;
+}
