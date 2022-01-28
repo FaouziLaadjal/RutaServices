@@ -9,22 +9,26 @@ html {
   line-height: 1.5;
   color: #303030;
 }
-.firstbox {
+header {
+  position: fixed;
+}
+.nav-btn {
+  display: none;
+}
+#home {
+  padding-top: 100px;
+}
+nav {
   background-color: #f8e098;
   display: grid;
   grid-template-columns: auto auto;
-  margin-bottom: 100px;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .logo {
   width: 100px;
-}
-.column-logo {
-  padding: 20px 100px;
-}
-.navbar {
-  padding-right: 100px;
-  align-self: center;
-  text-align: center;
 }
 .navlinks li {
   font-size: 1rem;
@@ -34,6 +38,7 @@ html {
 }
 .navlinks li a {
   text-decoration: none;
+  font-weight: bold;
 }
 .navlinks li a:hover {
   color: #e8c358;
@@ -143,7 +148,8 @@ h1 {
 }
 .fcolumn {
   text-align: center;
-  background-color: #f8e098;
+  background-color: #e8c358;
+  border-radius: 30px;
 }
 .drow1 {
   margin-bottom: 100px;
@@ -303,18 +309,10 @@ textarea {
 }
 .name,
 .email {
+  margin-bottom: 10px;
   font-size: 1.4rem;
-  margin-bottom:10px;
 }
 @media screen and (max-width: 860px) {
-  .navbar {
-    padding: 0;
-  }
-  .navlinks li a {
-    text-align: left;
-    display: inline;
-    font-size: 0.9rem;
-  }
   .row1,
   .drow1,
   .drow2,
@@ -341,7 +339,7 @@ textarea {
     font-size: 1rem;
   }
   .logo {
-    width: 50px;
+    width: 80px;
   }
   .frow1 {
     padding: 10px;
@@ -359,5 +357,40 @@ textarea {
     justify-content: center;
     gap: 20px;
   }
-}
+  .navlinks {
+    inset: 0 0 0 30%;
+    position: fixed;
+    z-index: 1000;
+    background: hsl(0 0% 0%/0.5);
+    backdrop-filter: blur(0.5em);
+    height: 2000px;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .navlinks li {
+    display: inline-block;
+  }
 
+  .navlinks {
+    display: none;
+  }
+
+  .a {
+    color: #e8c358;
+  }
+  .nav-btn {
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 10px;
+    right: 30px;
+    background: url(img/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    border: 0;
+  }
+  .random {
+    display: inline-block;
+  }
+}
